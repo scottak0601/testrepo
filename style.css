@@ -1,0 +1,128 @@
+body{
+    background-color: #000000;
+}
+
+@media(max-width: 1024px){
+    body{
+        background-color: #ffffff;
+    }
+}
+#circles,
+#squares{
+    display: block;
+    text-align: center;
+    width: 100%;
+    max-width: 1391px;
+    margin: 0 auto;
+}
+#squares{
+    margin-top: 100px;
+}
+#circles:hover div,
+#squares:hover div{
+    opacity: 50%;
+}
+#circles div,
+#squares div{
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    width: 255px;
+    height: 255px;
+    /* border-style: solid; */
+    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#squares div{
+    border-radius: 0;
+    width: 235px;
+    height: 235px;
+}
+
+#circles div:hover,
+#squares div:hover{
+    opacity: 100%;
+}
+
+#circles div .color,
+#squares div .color{
+    display: none;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#squares div .color{
+    bottom: initial;
+    top: -50px;
+}
+
+@media(max-width: 1024px){
+    #circles div,
+    #squares div{
+        margin-bottom: 60px;
+    }
+    #circles div .color,
+    #squares div .color{
+        color: #000000;
+    }
+}
+
+#circles div:hover .color,
+#squares div:hover .color{
+    display: block;
+}
+
+.red{
+    background-color: red;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+#sources{
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 100px;
+}
+
+@media(max-width: 1024px){
+    #sources{
+        color: #000000;
+    }
+}
+
+#sources h4{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+#sources ul{
+    list-style: none;
+    padding: 0;
+}
+
+#sources li{
+    display: block;
+}
